@@ -1,0 +1,26 @@
+.generalTable {
+  @apply bg-white mt-5 p-5 rounded-md overflow-x-auto;
+  &-head {
+    @apply flex justify-between items-center mb-6;
+    &-title {
+      @apply text-base capitalize text-black/80 font-bold;
+    }
+  }
+  table {
+    @apply w-full;
+    thead {
+      @apply border-t border-b border-black/10;
+      th {
+        @apply py-3 capitalize text-black/80 text-sm;
+      }
+    }
+    tbody {
+      tr {
+        @apply border-b border-black/10;
+        td {
+          @apply py-3 text-sm;
+        }
+      }
+    }
+  }
+}

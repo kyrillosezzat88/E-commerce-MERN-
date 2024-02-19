@@ -1,0 +1,6 @@
+.btn {
+  @apply px-4 py-2 rounded-xl text-center transition-all hover:transition-all duration-300  outline-none flex justify-center items-center gap-1;
+}
+.btn-primary {
+  @apply bg-primary text-white hover:bg-primary/80;
+}

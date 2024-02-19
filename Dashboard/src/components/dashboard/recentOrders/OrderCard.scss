@@ -1,0 +1,33 @@
+.orderCard {
+  @apply flex justify-between border-b border-b-black/10 py-5;
+  &-left {
+    @apply flex gap-4 w-1/2;
+    &-title {
+      @apply text-black/90;
+    }
+    &-price {
+      @apply mt-1 font-semibold;
+    }
+  }
+  &-right {
+    @apply flex flex-col text-center;
+    &-date {
+      @apply text-black/70 text-sm;
+    }
+    &-status {
+      @apply px-6 rounded-full mt-4;
+      &-pending {
+        @extend .orderCard-right-status;
+        @apply bg-secondary/50 text-danger;
+      }
+      &-complete {
+        @extend .orderCard-right-status;
+        @apply bg-success/20 text-success;
+      }
+      &-cancel {
+        @extend .orderCard-right-status;
+        @apply bg-danger/20 text-danger;
+      }
+    }
+  }
+}

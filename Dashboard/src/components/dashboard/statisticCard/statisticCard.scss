@@ -1,0 +1,9 @@
+.statisticCard {
+  @apply bg-white h-[200px] p-5 rounded-xl flex flex-col justify-between hover:shadow-md transition-all hover:transition-all hover:duration-500 duration-500 cursor-pointer;
+  &-head {
+    @apply flex justify-between items-center;
+  }
+  &-bottom {
+    @apply grid grid-cols-4 gap-3;
+  }
+}

@@ -1,0 +1,20 @@
+.navbar {
+  @apply py-3 px-5 flex justify-between items-center bg-white;
+  &-title {
+    @apply text-xl font-semibold flex items-center gap-3;
+    svg {
+      path {
+        @apply fill-primary;
+      }
+    }
+  }
+  &-content {
+    @apply flex items-center gap-4;
+    &-notifications {
+      @apply relative;
+      &-counter {
+        @apply text-xs rounded-full w-5 h-5 bg-secondary flex items-center justify-center absolute -top-3 left-2;
+      }
+    }
+  }
+}

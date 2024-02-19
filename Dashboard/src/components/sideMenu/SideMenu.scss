@@ -1,0 +1,31 @@
+.SideMenu {
+  @apply bg-white min-h-full md:px-[20px] lg:px-[30px] hidden md:block;
+  .logo {
+    @apply pt-4 -ml-2;
+  }
+  ul {
+    @apply mt-[30px];
+    li {
+      @apply px-[20px] py-[16px] mb-1 rounded-xl;
+      svg {
+        @apply mr-4;
+      }
+      &:hover {
+        @apply bg-primary transition-all text-white;
+        svg {
+          path {
+            @apply stroke-white;
+          }
+        }
+      }
+    }
+    .active {
+      @apply text-white bg-primary rounded-xl block;
+      svg {
+        path {
+          @apply stroke-white;
+        }
+      }
+    }
+  }
+}
