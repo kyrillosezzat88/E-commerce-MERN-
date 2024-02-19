@@ -1,0 +1,12 @@
+.accordion {
+  @apply border-b py-2 my-2;
+  &-title {
+    @apply font-JostSemiBold cursor-pointer text-2xl capitalize mb-3 flex justify-between items-center;
+  }
+  &-content {
+    @apply h-0 overflow-hidden transition-all duration-300;
+  }
+  .activeAccordion {
+    @apply h-auto transition-all duration-300;
+  }
+}

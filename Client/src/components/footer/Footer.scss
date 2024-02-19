@@ -1,0 +1,17 @@
+.footer {
+  @apply pt-12 mt-12 bg-black text-gray-300;
+  &-content {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-12;
+  }
+  &-list {
+    &-title {
+      @apply text-white text-lg mb-4;
+    }
+    ul {
+      li {
+        width: max-content;
+        @apply mb-2 hover:border-b hover:translate-x-2 transition-all duration-300 cursor-pointer hover:text-white;
+      }
+    }
+  }
+}

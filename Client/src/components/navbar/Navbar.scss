@@ -1,0 +1,24 @@
+.navbar {
+  @apply bg-transparent py-6 fixed inset-0 z-10 max-h-[80px] transition-all duration-500;
+  &-content {
+    @apply flex items-center justify-between;
+    &-left {
+      @apply w-full md:w-1/2 flex items-center gap-6;
+      &-logo {
+        @apply text-2xl md:text-4xl font-JostSemiBold;
+      }
+      &-menu {
+        @apply md:flex gap-6 text-lg hidden;
+      }
+    }
+    &-right {
+      @apply w-full md:w-1/2 flex justify-end gap-3;
+      &-counter {
+        @apply w-5 h-5 text-xs flex justify-center items-center bg-shadow text-white rounded-full absolute -top-2 -right-2;
+      }
+    }
+  }
+}
+.stickyNav {
+  @apply bg-white shadow-md transition-all duration-500;
+}

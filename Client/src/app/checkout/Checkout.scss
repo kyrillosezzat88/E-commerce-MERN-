@@ -1,0 +1,26 @@
+.checkout {
+  @apply mt-[100px];
+  &-content {
+    @apply py-[50px] flex justify-between flex-wrap md:flex-nowrap gap-6;
+    &-billing {
+      @apply w-full md:w-1/2;
+      &-head {
+        @apply mb-6;
+        &-actions {
+          @apply flex gap-2 items-center mb-3;
+        }
+      }
+      &-content {
+        &-title {
+          @apply text-4xl font-JostReg;
+        }
+        &-form {
+          @apply my-7 flex flex-col gap-5;
+        }
+      }
+    }
+    &-order {
+      @apply w-full md:w-2/5;
+    }
+  }
+}

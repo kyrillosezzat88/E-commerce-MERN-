@@ -1,0 +1,29 @@
+.contacts {
+  &-head {
+    @apply bg-shadow/20 min-h-[500px] flex flex-col items-center justify-center text-center;
+    &-title {
+      @apply text-3xl sm:text-5xl font-bold max-w-[300px] md:max-w-[500px];
+    }
+    &-subtitle {
+      @apply text-shadow font-bold uppercase mb-4;
+    }
+  }
+  &-content {
+    @apply flex flex-wrap md:flex-nowrap gap-4 py-12;
+    &-left {
+      @apply w-full md:w-1/2 flex flex-col gap-8;
+      &-title {
+        @apply text-2xl font-bold;
+      }
+    }
+    &-right {
+      @apply w-full md:w-1/2;
+      &-title {
+        @apply text-2xl font-bold mb-3;
+      }
+      &-form {
+        @apply grid grid-cols-1 md:grid-cols-2 gap-6 py-8;
+      }
+    }
+  }
+}

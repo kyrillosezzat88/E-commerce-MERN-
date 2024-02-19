@@ -1,0 +1,21 @@
+.cartItem {
+  @apply flex justify-between pb-4 mb-4 border-b border-gray-200;
+  &-left {
+    @apply flex gap-4 w-3/4;
+    &-content {
+      @apply pt-4 w-full md:w-1/3;
+      &-title {
+        @apply text-xl capitalize font-semibold;
+      }
+      &-options {
+        @apply flex flex-col mb-3;
+      }
+    }
+  }
+  &-right {
+    @apply flex flex-col justify-between items-end w-1/4;
+    &-price {
+      @apply font-bold text-xl;
+    }
+  }
+}

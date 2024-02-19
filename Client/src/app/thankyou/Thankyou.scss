@@ -1,0 +1,18 @@
+.thankyou {
+  @apply mt-[150px];
+  &-content {
+    @apply flex justify-center items-center flex-col gap-20;
+    &-title {
+      @apply text-center text-2xl md:text-4xl p-6 px-12 border-2 border-shadow border-dashed max-w-4xl text-shadow mb-10;
+    }
+    &-details {
+      @apply grid grid-cols-2 md:grid-cols-4 gap-10 md:gap-0;
+      &-cell {
+        @apply text-center md:px-10 md:border-r;
+        &-title {
+          @apply text-base md:text-xl;
+        }
+      }
+    }
+  }
+}

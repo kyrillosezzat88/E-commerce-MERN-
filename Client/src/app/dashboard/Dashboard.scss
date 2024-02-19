@@ -1,0 +1,18 @@
+.dashboard {
+  @apply h-screen;
+  &-content {
+    @apply flex flex-wrap gap-10 lg:flex-nowrap items-center justify-center h-screen;
+    &-left {
+      @apply w-full md:w-1/2 flex items-center flex-col text-center px-12 md:px-0;
+      &-title {
+        @apply text-3xl mb-3;
+      }
+      &-form {
+        @apply flex mt-12 sm:w-[500px];
+      }
+    }
+    &-right {
+      @apply relative hidden lg:block md:w-1/2 h-full;
+    }
+  }
+}

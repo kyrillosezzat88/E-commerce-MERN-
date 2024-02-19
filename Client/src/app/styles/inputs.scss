@@ -1,0 +1,31 @@
+input {
+  &:focus {
+    @apply border-black transition-all;
+  }
+}
+.input {
+  @apply px-4 py-3 outline-none rounded overflow-hidden;
+}
+
+.input-underline {
+  @extend .input;
+  @apply border-b border-b-black;
+}
+
+.input-outline {
+  @extend .input;
+  @apply border-gray-200 border;
+}
+
+.input-checkbox {
+  @apply relative flex justify-center items-center w-4 h-4 rounded  border border-gray-500 transition-all duration-300;
+  input[type="checkbox"] {
+    @apply hidden transition-all duration-300;
+  }
+  &-mark {
+    @apply bg-black opacity-0 transition-all duration-300;
+  }
+  input:checked ~ .input-checkbox-mark {
+    @apply opacity-100 transition-all duration-300;
+  }
+}

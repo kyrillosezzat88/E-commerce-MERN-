@@ -1,0 +1,36 @@
+.btn {
+  @apply px-6 py-1.5 border outline-none rounded text-center capitalize transition-all duration-500;
+}
+
+.btn-primary {
+  @extend .btn;
+  @apply bg-black text-white border-black hover:bg-white hover:text-black hover:border-black;
+}
+.btn-primary-hover {
+  @extend .btn-primary;
+  @apply hover:bg-shadow hover:text-white;
+}
+.btn-secondary {
+  @extend .btn;
+  @apply bg-shadow text-white hover:bg-white hover:text-shadow hover:border-shadow;
+}
+.btn-disabled {
+  @extend .btn;
+  @apply cursor-not-allowed bg-primary text-black border-primary;
+}
+.btn-danger {
+  @extend .btn;
+  @apply bg-red-600 text-white border-red-600 hover:bg-white hover:text-red-600 hover:border-red-600;
+}
+
+.btn-underline {
+  @extend .btn;
+  @apply p-0 border-none;
+  padding-bottom: 2px;
+  border-bottom: 2px solid black;
+}
+
+.btn-outline {
+  @extend .btn;
+  @apply border-black border text-black hover:bg-black hover:text-white;
+}

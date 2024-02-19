@@ -1,0 +1,51 @@
+.productDetails {
+  @apply mt-[100px];
+  &-content {
+    @apply py-12 flex flex-wrap md:flex-nowrap gap-16;
+    &-gallery {
+      @apply w-full md:w-1/2;
+    }
+    &-details {
+      @apply w-full md:w-1/2;
+      &-title {
+        @apply text-3xl font-JostSemiBold my-2;
+      }
+      &-rate {
+        @apply flex gap-1;
+      }
+      &-price {
+        @apply text-2xl font-semibold mt-2 flex gap-3;
+      }
+      &-disPrice {
+        @apply line-through text-gray-500;
+      }
+      &-desc {
+        @apply mt-6 max-w-md;
+      }
+      &-options {
+        @apply my-4;
+        &-colors {
+          @apply flex gap-2;
+          span {
+            @apply w-6 h-6 flex justify-center items-center border border-black rounded-full  after:bg-red-500 after:block after:rounded-full after:h-[17px] after:w-[17px];
+          }
+        }
+        &-size {
+          @apply flex gap-2 text-lg;
+          span {
+            @apply w-10 h-10 flex font-bold justify-center cursor-pointer items-center border border-gray-400 rounded hover:bg-shadow hover:text-white hover:border-shadow transition-all;
+          }
+          .active{
+            @apply bg-shadow text-white border-shadow;
+          }
+        }
+      }
+      &-actions {
+        @apply flex flex-wrap md:flex-nowrap gap-3 my-5;
+        &-quantity {
+          @apply rounded border border-gray-500 py-2 text-2xl text-center grid grid-cols-3 w-full;
+        }
+      }
+    }
+  }
+}

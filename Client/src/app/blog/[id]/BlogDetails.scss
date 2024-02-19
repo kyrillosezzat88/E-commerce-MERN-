@@ -1,0 +1,36 @@
+.blogDetails {
+  @apply mt-[100px];
+  &-head {
+    @apply flex flex-col items-center py-10;
+  }
+  &-desc {
+    @apply my-8 border-b border-gray-200 py-8;
+  }
+  &-bottom {
+    @apply flex justify-between items-center flex-wrap gap-8 border-b pb-8 border-gray-200;
+    &-tags {
+      @apply flex gap-4;
+      span {
+        @apply px-2 py-1;
+      }
+      h2 {
+        @apply px-2 py-1 border border-gray-200;
+      }
+    }
+    &-share {
+      @apply flex gap-4 items-center;
+      img {
+        @apply cursor-pointer;
+      }
+    }
+  }
+  &-related {
+    @apply my-8;
+    &-title {
+      @apply text-xl md:text-3xl font-JostBold;
+    }
+    &-posts {
+      @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8;
+    }
+  }
+}

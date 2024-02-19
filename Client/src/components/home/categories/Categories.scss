@@ -1,0 +1,21 @@
+.categories {
+  @apply my-12;
+  &-head {
+    @apply w-full flex justify-between items-center;
+    &-title {
+      @apply text-xl md:text-4xl font-semibold tracking-wider;
+    }
+  }
+  &-content {
+    @apply grid grid-cols-1 md:grid-cols-3 mt-10 gap-6;
+    &-card {
+      @apply w-full h-[200] px-6 bg-primary  flex justify-between rounded-xl overflow-hidden hover:[&>img]:scale-105 transition-all duration-700 cursor-pointer;
+      &-title {
+        @apply text-2xl capitalize hover:text-shadow transition-all duration-300;
+      }
+      &-image {
+        @apply transition-all duration-700 object-cover;
+      }
+    }
+  }
+}

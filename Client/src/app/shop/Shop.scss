@@ -1,0 +1,33 @@
+.shop {
+  &-header {
+    @apply h-[250px] md:h-[500px] flex items-center;
+    background: url("/images/shop-banner.png");
+    background-size: cover;
+    &-title {
+      @apply text-3xl md:text-6xl mb-3 font-JostSemiBold;
+    }
+  }
+  &-content {
+    &-sorting {
+      @apply flex justify-between items-center;
+      select {
+        @apply outline-none border-b border-black capitalize pb-2;
+      }
+    }
+    .selected-filters {
+      @apply flex items-center gap-3 mt-4;
+    }
+    .clearFilter {
+      @apply border-b-2 border-black cursor-pointer pb-1 hover:text-red-500 hover:border-red-500 transition-all duration-300 font-JostSemiBold;
+    }
+    .pagination {
+      @apply flex items-center justify-center gap-3;
+      &-page {
+        @apply w-6 h-6 cursor-pointer flex justify-center items-center p-5 rounded-full hover:bg-black hover:text-white;
+      }
+      &-active {
+        @apply bg-black text-white;
+      }
+    }
+  }
+}
