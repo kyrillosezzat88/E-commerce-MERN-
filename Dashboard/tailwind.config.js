@@ -11,14 +11,15 @@ export default {
         "2xl": "6rem",
       },
     },
-    extend: {},
-    colors: {
-      primary: "#5570F1",
-      secondary: "#FFCC91",
-      black: "#1C1D22",
-      white: "#fff",
-      success: "#519C66",
-      danger: "#CC5F5F",
+    extend: {
+      colors: {
+        primary: "#5570F1",
+        secondary: "#FFCC91",
+        black: "#1C1D22",
+        white: "#fff",
+        success: "#519C66",
+        danger: "#CC5F5F",
+      },
     },
   },
   plugins: [],

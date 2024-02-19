@@ -20,6 +20,25 @@
         td {
           @apply py-3 text-sm;
         }
+        .status {
+          @apply rounded-xl px-3 py-1 capitalize;
+        }
+        .completed {
+          @extend .status;
+          @apply bg-success/20 text-success;
+        }
+        .pending {
+          @extend .status;
+          @apply bg-secondary/20 text-black;
+        }
+        .in-progress {
+          @extend .status;
+          @apply bg-primary/20 text-primary;
+        }
+        .canceled {
+          @extend .status;
+          @apply bg-danger/20 text-danger;
+        }
       }
     }
   }

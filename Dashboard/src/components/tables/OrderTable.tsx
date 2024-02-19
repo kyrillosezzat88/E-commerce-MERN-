@@ -21,7 +21,7 @@ const OrderTable = () => {
         orderType: "Home Delivery",
         orderTrackingId: "123t21e3",
         orderTotal: 200,
-        status: "Completed",
+        status: "completed",
       },
       {
         name: "kyrillos",
@@ -29,7 +29,23 @@ const OrderTable = () => {
         orderType: "Home Delivery",
         orderTrackingId: "123t21e3",
         orderTotal: 200,
-        status: "Completed",
+        status: "pending",
+      },
+      {
+        name: "kyrillos",
+        orderDate: new Date(),
+        orderType: "Home Delivery",
+        orderTrackingId: "123t21e3",
+        orderTotal: 200,
+        status: "in-progress",
+      },
+      {
+        name: "kyrillos",
+        orderDate: new Date(),
+        orderType: "Home Delivery",
+        orderTrackingId: "123t21e3",
+        orderTotal: 200,
+        status: "canceled",
       },
     ],
   });
@@ -39,7 +55,7 @@ const OrderTable = () => {
         <div className="generalTable-head ">
           <h1 className="generalTable-head-title">{data.tableName}</h1>
           <div className="generalTable-head-actions">
-            <input type="text" placeholder="Search" />
+            <input type="text" placeholder="Search" className="input" />
           </div>
         </div>
         <table className="w-full">
@@ -71,7 +87,9 @@ const OrderTable = () => {
                     <option value="complete">complete</option>
                   </select>
                 </td>
-                <td>{td.status}</td>
+                <td>
+                  <span className={td.status}>{td.status}</span>
+                </td>
               </tr>
             ))}
           </tbody>
