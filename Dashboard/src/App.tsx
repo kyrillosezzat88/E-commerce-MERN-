@@ -13,7 +13,7 @@ function App() {
           <Navbar />
           <div className="bg-primary/10 p-5 h-full">
             <Routes>
-              <Route path="/" element={<Home />} />
+              <Route path="/" element={<Dashboard />} />
               <Route path="/dashboard" element={<Dashboard />} />
               <Route path="/orders" element={<Orders />} />
               <Route path="/login" element={<Login />} />
