@@ -50,7 +50,7 @@ const SalesBanner = ({ endDate }: SalesBannerTypes) => {
 
     // Clear the interval when the component is unmounted
     return () => clearInterval(intervalId);
-  }, []);
+  }, [endDate]);
 
   return (
     <section className="salesBanner ">

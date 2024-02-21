@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Dashboard, Home, Login, Orders } from "./pages";
+import { Dashboard, Login, Orders } from "./pages";
 import { Navbar, SideMenu } from "./components";
 
 function App() {
