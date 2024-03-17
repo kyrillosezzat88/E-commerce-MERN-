@@ -16,7 +16,7 @@
     }
     tbody {
       tr {
-        @apply border-b border-black/10;
+        @apply border-b border-black/10 cursor-pointer;
         td {
           @apply py-3 text-sm;
         }

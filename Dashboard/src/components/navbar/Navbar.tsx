@@ -12,7 +12,7 @@ const Navbar = () => {
     <nav className="navbar">
       <h2 className="navbar-title">
         <MenuIcon />
-        <DashboardIcon /> {capitalize(pathname)}
+        <DashboardIcon /> {capitalize(pathname) || "Dashboard"}
       </h2>
       <div className="navbar-content">
         <div className="navbar-content-notifications">
