@@ -8,7 +8,6 @@ const Orders = () => {
   const [isOpen, setOrderModal] = useState<boolean>(false);
   return (
     <section className="orders">
-      {isOpen && <OrderModal isOpen={isOpen} setOpenModal={setOrderModal} />}
       <div className="orders-head flex items-center justify-between">
         <h1>Order Summary</h1>
         <button className="btn btn-primary" onClick={() => setOrderModal(true)}>
