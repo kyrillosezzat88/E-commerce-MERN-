@@ -1,5 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import './assets/styles/base.scss'
+@layer utilities {
+  .min-h-screen-custom {
+    min-height: calc(100vh - 112px);
+  }
+}
+@import "./assets/styles/base.scss";

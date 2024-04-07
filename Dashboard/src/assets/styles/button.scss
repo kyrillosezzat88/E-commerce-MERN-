@@ -1,6 +1,15 @@
 .btn {
-  @apply px-4 py-2 rounded-xl text-center transition-all hover:transition-all duration-300  outline-none flex justify-center items-center gap-1;
+  @apply px-4 py-2 rounded-md capitalize text-center transition-all hover:transition-all duration-300  outline-none flex justify-center items-center gap-1;
 }
 .btn-primary {
+  @extend .btn;
   @apply bg-primary text-white hover:bg-primary/80;
+}
+.btn-outline {
+  @extend .btn;
+  @apply border border-primary text-primary;
+}
+.btn-danger {
+  @extend .btn;
+  @apply bg-red-400 text-white hover:bg-red-400/80;
 }

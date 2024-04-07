@@ -1,0 +1,23 @@
+.alert {
+  @apply fixed inset-0 bg-black/30 flex justify-center items-start  z-[11];
+  &-content {
+    @apply font-bold z-20 bg-white shadow-md rounded-md p-6 border-t-8 mt-6 w-1/3;
+  }
+  .type {
+    &-success {
+      @apply border-t-green-400;
+    }
+    &-warning {
+      @apply border-t-yellow-400;
+    }
+    &-danger {
+      @apply border-t-red-400;
+    }
+    &-info {
+      @apply border-t-primary;
+    }
+  }
+  &-actions {
+    @apply flex gap-3 mt-4;
+  }
+}

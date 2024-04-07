@@ -11,6 +11,12 @@ import { ReactComponent as OrdersIcon } from "./orders.svg";
 import { ReactComponent as EmptyOrders } from "./emptyOrders.svg";
 import { ReactComponent as PlusIcon } from "./plus.svg";
 import { ReactComponent as MenuIcon } from "./Menu.svg";
+import { ReactComponent as CloseIcon } from "./close.svg";
+import { ReactComponent as FileIcon } from "./file.svg";
+import { ReactComponent as UploadIcon } from "./upload.svg";
+import { ReactComponent as AlertSuccess } from "./alert-success.svg";
+import { ReactComponent as AlertDanger } from "./alert-danger.svg";
+import { ReactComponent as Alertwarning } from "./alert-warning.svg";
 
 export {
   DashIcon,
@@ -26,4 +32,10 @@ export {
   EmptyOrders,
   PlusIcon,
   MenuIcon,
+  CloseIcon,
+  FileIcon,
+  UploadIcon,
+  AlertSuccess,
+  AlertDanger,
+  Alertwarning,
 };

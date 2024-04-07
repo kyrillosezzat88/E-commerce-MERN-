@@ -8,3 +8,10 @@ export { default as RecentOrders } from "./dashboard/recentOrders/RecentOrders";
 export { default as SummaryChart } from "./dashboard/summaryChart/SummaryChart";
 // tables
 export { default as OrderTable } from "./tables/OrderTable";
+export { default as CategoriesTable } from "./tables/CategoriesTable";
+//Modals
+export { default as OrderModal } from "./modal/OrderModal";
+export { default as CreateCategoryModal } from "./modal/CreateCategory";
+
+// alert
+export { default as Alert } from "./alert/Alert";

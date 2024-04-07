@@ -23,7 +23,8 @@
         .status {
           @apply rounded-xl px-3 py-1 capitalize;
         }
-        .completed {
+        .completed,
+        .active {
           @extend .status;
           @apply bg-success/20 text-success;
         }
@@ -35,7 +36,8 @@
           @extend .status;
           @apply bg-primary/20 text-primary;
         }
-        .canceled {
+        .canceled,
+        .in-Active {
           @extend .status;
           @apply bg-danger/20 text-danger;
         }

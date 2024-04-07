@@ -14,13 +14,13 @@ export default [
     icon: DashIcon,
   },
   {
-    name: "Products",
-    route: "/products",
+    name: "Categories",
+    route: "/categories",
     icon: OrderIcon,
   },
   {
-    name: "Categories",
-    route: "/categories",
+    name: "Products",
+    route: "/products",
     icon: OrderIcon,
   },
   {

@@ -1,0 +1,9 @@
+.modal {
+  @apply bg-black/50 fixed inset-0 z-10 min-h-full flex justify-center items-center;
+  &-container {
+    @apply bg-white w-full lg:w-1/2 p-5 rounded-md shadow-md mx-6;
+  }
+  &-head {
+    @apply border-b pb-2 mb-3;
+  }
+}

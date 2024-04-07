@@ -1,14 +1,17 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { useState } from "react";
 import { EmptyOrders, OrdersIcon, PlusIcon } from "../../assets/icons";
-import { OrderTable, StatisticCard } from "../../components";
+import { OrderModal, OrderTable, StatisticCard } from "../../components";
 
 const Orders = () => {
   const [data, setdata] = useState(1);
+  const [isOpen, setOrderModal] = useState<boolean>(false);
   return (
     <section className="orders">
+      {isOpen && <OrderModal isOpen={isOpen} setOpenModal={setOrderModal} />}
       <div className="orders-head flex items-center justify-between">
         <h1>Order Summary</h1>
-        <button className="btn btn-primary">
+        <button className="btn btn-primary" onClick={() => setOrderModal(true)}>
           <PlusIcon />
           Create a new order
         </button>
