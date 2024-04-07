@@ -1,10 +1,11 @@
 import { useSelector, useDispatch } from "react-redux";
 import "./Alert.scss";
-import { AlertSuccess } from "../../assets/icons";
+import { AlertSuccess, Alertwarning, AlertDanger } from "../../assets/icons";
 import { hideAlert } from "../../redux/slices/Alert";
 const Alert = () => {
   const dispatch = useDispatch();
   const { isOpen, message, type, action } = useSelector(
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     (state: any) => state.alert
   );
   const handelCancel = () => {
@@ -15,7 +16,9 @@ const Alert = () => {
     <div className="alert">
       <div className={`alert-content type-${type}`}>
         <div className="flex gap-2 items-center">
-          <AlertSuccess />
+          {type === "success" && <AlertSuccess />}
+          {type === "warning" && <Alertwarning />}
+          {type === "danger" && <AlertDanger />}
           <p>{message}</p>
         </div>
         <div className="alert-actions">

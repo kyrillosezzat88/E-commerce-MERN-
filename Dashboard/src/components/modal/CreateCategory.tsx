@@ -21,7 +21,7 @@ const initCategory: categoryFormTypes = {
 };
 
 const CreateCategory = ({ setOpenModal }: CategoryModalPropsType) => {
-  const FormikRef = useRef(null);
+  const FormikRef = useRef<any>(null);
   const dispatch = useDispatch();
   const [SelectedImage, setSelectedImage] = useState<Blob | null>(null);
 
