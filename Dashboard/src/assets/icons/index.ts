@@ -17,6 +17,8 @@ import { ReactComponent as UploadIcon } from "./upload.svg";
 import { ReactComponent as AlertSuccess } from "./alert-success.svg";
 import { ReactComponent as AlertDanger } from "./alert-danger.svg";
 import { ReactComponent as Alertwarning } from "./alert-warning.svg";
+import { ReactComponent as DeleteIcon } from "./delete.svg";
+import { ReactComponent as EditIcon } from "./edit.svg";
 
 export {
   DashIcon,
@@ -38,4 +40,6 @@ export {
   AlertSuccess,
   AlertDanger,
   Alertwarning,
+  DeleteIcon,
+  EditIcon,
 };

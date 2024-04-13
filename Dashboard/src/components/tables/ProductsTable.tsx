@@ -1,42 +1,55 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import { useState } from "react";
-import "./tables.scss";
 import Pagination from "./Pagination";
 import { handleRowClicked } from "../../utils/tableUtils";
-const CategoriesTable = () => {
+import { DeleteIcon, EditIcon } from "../../assets/icons";
+
+const ProductsTable = () => {
   const [selectedIds, setSelectedIds] = useState<string[]>([]);
   const [data, setData] = useState({
-    tableName: "Customers Order",
-    tableHead: ["category name", "added date", "action", "status"],
+    tableName: "products",
+    tableHead: [
+      "product name",
+      "category",
+      "added date",
+      "stock",
+      "status",
+      "actions",
+    ],
     tableBody: [
       {
         id: "21e21e",
-        name: "kyrillos",
-        orderDate: new Date(),
-        status: "active",
+        name: "shoos",
+        category: "shoos",
+        addedDate: new Date(),
+        stock: 100,
+        status: "in-Active",
       },
       {
         id: "21e21wee",
-        name: "kyrillos",
-        orderDate: new Date(),
+        name: "shoos",
+        category: "shoos",
+        addedDate: new Date(),
+        stock: 10,
         status: "active",
       },
       {
         id: "21e222e",
-        name: "kyrillos",
-        orderDate: new Date(),
-        status: "in-Active",
+        name: "shoos",
+        category: "shoos",
+        addedDate: new Date(),
+        stock: 200,
+        status: "active",
       },
       {
         id: "d32e3",
-        name: "kyrillos",
-        orderDate: new Date(),
+        name: "shoos",
+        category: "shoos",
+        addedDate: new Date(),
+        stock: 20,
         status: "active",
       },
     ],
   });
-
   return (
     <div className="generalTable">
       <div className="generalTable-head ">
@@ -66,15 +79,26 @@ const CategoriesTable = () => {
                 <input type="checkbox" checked={selectedIds.includes(td.id)} />
               </td>
               <td>{td.name}</td>
-              <td>{td.orderDate.toDateString()}</td>
+              <td>{td.category}</td>
+              <td>{td.addedDate.toDateString()}</td>
+              <td>{td.stock}</td>
               <td>
-                <select className="select" onClick={(e) => e.stopPropagation()}>
+                <span className={td.status}>{td.status}</span>
+              </td>
+              <td
+                className="flex items-center gap-1"
+                onClick={(e) => e.stopPropagation()}
+              >
+                <select className="select">
                   <option value="canceled">inActive</option>
                   <option value="complete">Active</option>
                 </select>
-              </td>
-              <td>
-                <span className={td.status}>{td.status}</span>
+                <button>
+                  <DeleteIcon />
+                </button>
+                <button>
+                  <EditIcon />
+                </button>
               </td>
             </tr>
           ))}
@@ -85,4 +109,4 @@ const CategoriesTable = () => {
   );
 };
 
-export default CategoriesTable;
+export default ProductsTable;

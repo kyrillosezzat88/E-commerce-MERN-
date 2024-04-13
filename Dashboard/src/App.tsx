@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Categories, Dashboard, Login, Orders } from "./pages";
+import { Categories, Dashboard, Login, Orders, Products } from "./pages";
 import { Alert, Navbar, SideMenu } from "./components";
 
 function App() {
@@ -17,6 +17,7 @@ function App() {
               <Route path="/" element={<Dashboard />} />
               <Route path="/dashboard" element={<Dashboard />} />
               <Route path="/categories" element={<Categories />} />
+              <Route path="/products" element={<Products />} />
               <Route path="/orders" element={<Orders />} />
               <Route path="/login" element={<Login />} />
             </Routes>
